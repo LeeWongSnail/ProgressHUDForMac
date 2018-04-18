@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBE501962080A98200843D3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE501952080A98200843D3B /* AppDelegate.m */; };
+		EBE501992080A98200843D3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE501982080A98200843D3B /* ViewController.m */; };
+		EBE5019B2080A98300843D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE5019A2080A98300843D3B /* Assets.xcassets */; };
+		EBE5019E2080A98300843D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE5019C2080A98300843D3B /* Main.storyboard */; };
+		EBE501A12080A98300843D3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE501A02080A98300843D3B /* main.m */; };
+		EBE501AC2080A98300843D3B /* ArtProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE501AB2080A98300843D3B /* ArtProgressHUDTests.m */; };
+		EBE501B72080A98300843D3B /* ArtProgressHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE501B62080A98300843D3B /* ArtProgressHUDUITests.m */; };
+		EBE501D62080AFC600843D3B /* ArtProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE501D52080AFC600843D3B /* ArtProgressHUD.m */; };
+		EBE502DA2085D7EE00843D3B /* ArtHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE502D92085D7EE00843D3B /* ArtHUDView.m */; };
+		EBE502DC2085D7FC00843D3B /* ArtProgressHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE502DB2085D7FC00843D3B /* ArtProgressHUD.xib */; };
+		EBE5036F2087257700843D3B /* MLHudAlertInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE5036B2087257700843D3B /* MLHudAlertInfo.png */; };
+		EBE503702087257700843D3B /* MLHudAlertError.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE5036C2087257700843D3B /* MLHudAlertError.png */; };
+		EBE503712087257700843D3B /* MLHudAlertSuccess.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE5036D2087257700843D3B /* MLHudAlertSuccess.png */; };
+		EBE503722087257700843D3B /* MLHudAlertWarn.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE5036E2087257700843D3B /* MLHudAlertWarn.png */; };
+		EBE5037520874B3500843D3B /* NSObject+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE5037420874B3500843D3B /* NSObject+HUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBE501A82080A98300843D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE501892080A98200843D3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE501902080A98200843D3B;
+			remoteInfo = ArtProgressHUD;
+		};
+		EBE501B32080A98300843D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE501892080A98200843D3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE501902080A98200843D3B;
+			remoteInfo = ArtProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBE501912080A98200843D3B /* ArtProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtProgressHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE501942080A98200843D3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBE501952080A98200843D3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBE501972080A98200843D3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBE501982080A98200843D3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBE5019A2080A98300843D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBE5019D2080A98300843D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBE5019F2080A98300843D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE501A02080A98300843D3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBE501A22080A98300843D3B /* ArtProgressHUD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArtProgressHUD.entitlements; sourceTree = "<group>"; };
+		EBE501A72080A98300843D3B /* ArtProgressHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtProgressHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE501AB2080A98300843D3B /* ArtProgressHUDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtProgressHUDTests.m; sourceTree = "<group>"; };
+		EBE501AD2080A98300843D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE501B22080A98300843D3B /* ArtProgressHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtProgressHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE501B62080A98300843D3B /* ArtProgressHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtProgressHUDUITests.m; sourceTree = "<group>"; };
+		EBE501B82080A98300843D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE501D42080AFC600843D3B /* ArtProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtProgressHUD.h; sourceTree = "<group>"; };
+		EBE501D52080AFC600843D3B /* ArtProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtProgressHUD.m; sourceTree = "<group>"; };
+		EBE502D82085D7EE00843D3B /* ArtHUDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtHUDView.h; sourceTree = "<group>"; };
+		EBE502D92085D7EE00843D3B /* ArtHUDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtHUDView.m; sourceTree = "<group>"; };
+		EBE502DB2085D7FC00843D3B /* ArtProgressHUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtProgressHUD.xib; sourceTree = "<group>"; };
+		EBE5036B2087257700843D3B /* MLHudAlertInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLHudAlertInfo.png; sourceTree = "<group>"; };
+		EBE5036C2087257700843D3B /* MLHudAlertError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLHudAlertError.png; sourceTree = "<group>"; };
+		EBE5036D2087257700843D3B /* MLHudAlertSuccess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLHudAlertSuccess.png; sourceTree = "<group>"; };
+		EBE5036E2087257700843D3B /* MLHudAlertWarn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLHudAlertWarn.png; sourceTree = "<group>"; };
+		EBE5037320874B3500843D3B /* NSObject+HUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HUD.h"; sourceTree = "<group>"; };
+		EBE5037420874B3500843D3B /* NSObject+HUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HUD.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBE5018E2080A98200843D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE501A42080A98300843D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE501AF2080A98300843D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBE501882080A98200843D3B = {
+			isa = PBXGroup;
+			children = (
+				EBE501932080A98200843D3B /* ArtProgressHUD */,
+				EBE501AA2080A98300843D3B /* ArtProgressHUDTests */,
+				EBE501B52080A98300843D3B /* ArtProgressHUDUITests */,
+				EBE501922080A98200843D3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBE501922080A98200843D3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBE501912080A98200843D3B /* ArtProgressHUD.app */,
+				EBE501A72080A98300843D3B /* ArtProgressHUDTests.xctest */,
+				EBE501B22080A98300843D3B /* ArtProgressHUDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE501932080A98200843D3B /* ArtProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				EBE501C42080AB8100843D3B /* ArtProgressHUD */,
+				EBE501942080A98200843D3B /* AppDelegate.h */,
+				EBE501952080A98200843D3B /* AppDelegate.m */,
+				EBE501972080A98200843D3B /* ViewController.h */,
+				EBE501982080A98200843D3B /* ViewController.m */,
+				EBE5019A2080A98300843D3B /* Assets.xcassets */,
+				EBE5019C2080A98300843D3B /* Main.storyboard */,
+				EBE5019F2080A98300843D3B /* Info.plist */,
+				EBE501A02080A98300843D3B /* main.m */,
+				EBE501A22080A98300843D3B /* ArtProgressHUD.entitlements */,
+			);
+			path = ArtProgressHUD;
+			sourceTree = "<group>";
+		};
+		EBE501AA2080A98300843D3B /* ArtProgressHUDTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE501AB2080A98300843D3B /* ArtProgressHUDTests.m */,
+				EBE501AD2080A98300843D3B /* Info.plist */,
+			);
+			path = ArtProgressHUDTests;
+			sourceTree = "<group>";
+		};
+		EBE501B52080A98300843D3B /* ArtProgressHUDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE501B62080A98300843D3B /* ArtProgressHUDUITests.m */,
+				EBE501B82080A98300843D3B /* Info.plist */,
+			);
+			path = ArtProgressHUDUITests;
+			sourceTree = "<group>";
+		};
+		EBE501C42080AB8100843D3B /* ArtProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5036A2087257700843D3B /* Resources */,
+				EBE501D42080AFC600843D3B /* ArtProgressHUD.h */,
+				EBE501D52080AFC600843D3B /* ArtProgressHUD.m */,
+				EBE502D82085D7EE00843D3B /* ArtHUDView.h */,
+				EBE502D92085D7EE00843D3B /* ArtHUDView.m */,
+				EBE502DB2085D7FC00843D3B /* ArtProgressHUD.xib */,
+				EBE5037320874B3500843D3B /* NSObject+HUD.h */,
+				EBE5037420874B3500843D3B /* NSObject+HUD.m */,
+			);
+			path = ArtProgressHUD;
+			sourceTree = "<group>";
+		};
+		EBE5036A2087257700843D3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5036B2087257700843D3B /* MLHudAlertInfo.png */,
+				EBE5036C2087257700843D3B /* MLHudAlertError.png */,
+				EBE5036D2087257700843D3B /* MLHudAlertSuccess.png */,
+				EBE5036E2087257700843D3B /* MLHudAlertWarn.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBE501902080A98200843D3B /* ArtProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE501BB2080A98300843D3B /* Build configuration list for PBXNativeTarget "ArtProgressHUD" */;
+			buildPhases = (
+				EBE5018D2080A98200843D3B /* Sources */,
+				EBE5018E2080A98200843D3B /* Frameworks */,
+				EBE5018F2080A98200843D3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtProgressHUD;
+			productName = ArtProgressHUD;
+			productReference = EBE501912080A98200843D3B /* ArtProgressHUD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBE501A62080A98300843D3B /* ArtProgressHUDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE501BE2080A98300843D3B /* Build configuration list for PBXNativeTarget "ArtProgressHUDTests" */;
+			buildPhases = (
+				EBE501A32080A98300843D3B /* Sources */,
+				EBE501A42080A98300843D3B /* Frameworks */,
+				EBE501A52080A98300843D3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE501A92080A98300843D3B /* PBXTargetDependency */,
+			);
+			name = ArtProgressHUDTests;
+			productName = ArtProgressHUDTests;
+			productReference = EBE501A72080A98300843D3B /* ArtProgressHUDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBE501B12080A98300843D3B /* ArtProgressHUDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE501C12080A98300843D3B /* Build configuration list for PBXNativeTarget "ArtProgressHUDUITests" */;
+			buildPhases = (
+				EBE501AE2080A98300843D3B /* Sources */,
+				EBE501AF2080A98300843D3B /* Frameworks */,
+				EBE501B02080A98300843D3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE501B42080A98300843D3B /* PBXTargetDependency */,
+			);
+			name = ArtProgressHUDUITests;
+			productName = ArtProgressHUDUITests;
+			productReference = EBE501B22080A98300843D3B /* ArtProgressHUDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBE501892080A98200843D3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = LeeWong;
+				TargetAttributes = {
+					EBE501902080A98200843D3B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					EBE501A62080A98300843D3B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = EBE501902080A98200843D3B;
+					};
+					EBE501B12080A98300843D3B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = EBE501902080A98200843D3B;
+					};
+				};
+			};
+			buildConfigurationList = EBE5018C2080A98200843D3B /* Build configuration list for PBXProject "ArtProgressHUD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBE501882080A98200843D3B;
+			productRefGroup = EBE501922080A98200843D3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBE501902080A98200843D3B /* ArtProgressHUD */,
+				EBE501A62080A98300843D3B /* ArtProgressHUDTests */,
+				EBE501B12080A98300843D3B /* ArtProgressHUDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBE5018F2080A98200843D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE502DC2085D7FC00843D3B /* ArtProgressHUD.xib in Resources */,
+				EBE503712087257700843D3B /* MLHudAlertSuccess.png in Resources */,
+				EBE5019B2080A98300843D3B /* Assets.xcassets in Resources */,
+				EBE5019E2080A98300843D3B /* Main.storyboard in Resources */,
+				EBE503702087257700843D3B /* MLHudAlertError.png in Resources */,
+				EBE5036F2087257700843D3B /* MLHudAlertInfo.png in Resources */,
+				EBE503722087257700843D3B /* MLHudAlertWarn.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE501A52080A98300843D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE501B02080A98300843D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBE5018D2080A98200843D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE502DA2085D7EE00843D3B /* ArtHUDView.m in Sources */,
+				EBE501D62080AFC600843D3B /* ArtProgressHUD.m in Sources */,
+				EBE501992080A98200843D3B /* ViewController.m in Sources */,
+				EBE5037520874B3500843D3B /* NSObject+HUD.m in Sources */,
+				EBE501A12080A98300843D3B /* main.m in Sources */,
+				EBE501962080A98200843D3B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE501A32080A98300843D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE501AC2080A98300843D3B /* ArtProgressHUDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE501AE2080A98300843D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE501B72080A98300843D3B /* ArtProgressHUDUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBE501A92080A98300843D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE501902080A98200843D3B /* ArtProgressHUD */;
+			targetProxy = EBE501A82080A98300843D3B /* PBXContainerItemProxy */;
+		};
+		EBE501B42080A98300843D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE501902080A98200843D3B /* ArtProgressHUD */;
+			targetProxy = EBE501B32080A98300843D3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBE5019C2080A98300843D3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE5019D2080A98300843D3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBE501B92080A98300843D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EBE501BA2080A98300843D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EBE501BC2080A98300843D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArtProgressHUD/ArtProgressHUD.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ArtProgressHUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.ArtProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBE501BD2080A98300843D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArtProgressHUD/ArtProgressHUD.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ArtProgressHUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.ArtProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBE501BF2080A98300843D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ArtProgressHUDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.ArtProgressHUDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtProgressHUD.app/Contents/MacOS/ArtProgressHUD";
+			};
+			name = Debug;
+		};
+		EBE501C02080A98300843D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ArtProgressHUDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.ArtProgressHUDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtProgressHUD.app/Contents/MacOS/ArtProgressHUD";
+			};
+			name = Release;
+		};
+		EBE501C22080A98300843D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ArtProgressHUDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.ArtProgressHUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArtProgressHUD;
+			};
+			name = Debug;
+		};
+		EBE501C32080A98300843D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ArtProgressHUDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.ArtProgressHUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArtProgressHUD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBE5018C2080A98200843D3B /* Build configuration list for PBXProject "ArtProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE501B92080A98300843D3B /* Debug */,
+				EBE501BA2080A98300843D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE501BB2080A98300843D3B /* Build configuration list for PBXNativeTarget "ArtProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE501BC2080A98300843D3B /* Debug */,
+				EBE501BD2080A98300843D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE501BE2080A98300843D3B /* Build configuration list for PBXNativeTarget "ArtProgressHUDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE501BF2080A98300843D3B /* Debug */,
+				EBE501C02080A98300843D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE501C12080A98300843D3B /* Build configuration list for PBXNativeTarget "ArtProgressHUDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE501C22080A98300843D3B /* Debug */,
+				EBE501C32080A98300843D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBE501892080A98200843D3B /* Project object */;
+}
