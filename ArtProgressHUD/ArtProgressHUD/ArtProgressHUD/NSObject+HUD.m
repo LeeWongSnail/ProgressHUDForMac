@@ -33,6 +33,11 @@
     [ArtProgressHUD showSuccessText:aText];
 }
 
+- (void)art_showLoading
+{
+    [self art_showLoading:nil];
+}
+
 - (void)art_showLoading:(NSView *)aView
 {
     [ArtProgressHUD showLoading:aView];

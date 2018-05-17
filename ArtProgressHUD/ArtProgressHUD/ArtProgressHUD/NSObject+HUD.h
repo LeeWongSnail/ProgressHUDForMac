@@ -18,6 +18,7 @@
 - (void)art_showErrorText:(NSString *)aText;
 - (void)art_showText:(NSString *)aText type:(EArtProgressHUDType)aType inView:(NSView *)aView;
 
+- (void)art_showLoading;
 - (void)art_showLoading:(NSView *)aView;
 - (void)art_dismissLoading;
 @end

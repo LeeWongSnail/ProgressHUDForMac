@@ -85,11 +85,20 @@ static ArtProgressHUD *_hudProgress;
     [_hudProgress showWindow:delegate.mainWC.window];
 }
 
-+ (void)showLoading:(NSWindow *)aWindow;
++ (void)showLoading
+{
+    [ArtProgressHUD showLoading:nil];
+}
+
++ (void)showLoading:(NSView *)aView;
 
 {
     if (!_hudProgress) {
         _hudProgress = [[self alloc] init];
+    }
+    
+    if (aView) {
+        _hudProgress.popView = aView;
     }
     
     [ArtProgressHUD configImageNameWithType:EArtProgressHUDLoading];
@@ -98,8 +107,9 @@ static ArtProgressHUD *_hudProgress;
         [_hudProgress.window.parentWindow removeChildWindow:_hudProgress.window];
     }
     
-    [aWindow addChildWindow:_hudProgress.window ordered:NSWindowAbove];
-    [_hudProgress showWindow:aWindow];
+    AppDelegate *delegate = [NSApplication sharedApplication].delegate;
+    [delegate.mainWC.window addChildWindow:_hudProgress.window ordered:NSWindowAbove];
+    [_hudProgress showWindow:delegate.mainWC.window];
 }
 
 
