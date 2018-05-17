@@ -30,36 +30,44 @@ static ArtProgressHUD *_hudProgress;
 @property (weak) IBOutlet NSTextField *onlyTipTextField;
 @property (weak) IBOutlet NSProgressIndicator *loadingIndicator;
 
+
+@property (nonatomic, strong) NSView *popView;
+
 @end
 
 @implementation ArtProgressHUD
 
-+ (void)showText:(NSString *)aText inWindow:(NSWindow *)aWindow
++ (void)showText:(NSString *)aText
 {
-    [ArtProgressHUD showText:aText type:EArtProgressHUDTypeNone inWindow:aWindow];
-}
-
-+ (void)showInfoText:(NSString *)aText inWindow:(NSWindow *)aWindow
-{
-    [ArtProgressHUD showText:aText type:EArtProgressHUDInfo inWindow:aWindow];
-}
-
-+ (void)showErrorText:(NSString *)aText inWindow:(NSWindow *)aWindow
-{
-    [ArtProgressHUD showText:aText type:EArtProgressHUDError inWindow:aWindow];
+    [ArtProgressHUD showText:aText type:EArtProgressHUDTypeNone inView:nil];
 }
 
 
-+ (void)showSuccessText:(NSString *)aText inWindow:(NSWindow *)aWindow
++ (void)showInfoText:(NSString *)aText
 {
-    [ArtProgressHUD showText:aText type:EArtProgressHUDSuccess inWindow:aWindow];
+    [ArtProgressHUD showText:aText type:EArtProgressHUDInfo inView:nil];
+}
+
++ (void)showErrorText:(NSString *)aText
+{
+    [ArtProgressHUD showText:aText type:EArtProgressHUDError inView:nil];
 }
 
 
-+ (void)showText:(NSString *)aText type:(EArtProgressHUDType)aType inWindow:(NSWindow *)aWindow
++ (void)showSuccessText:(NSString *)aText
+{
+    [ArtProgressHUD showText:aText type:EArtProgressHUDSuccess inView:nil];
+}
+
+
++ (void)showText:(NSString *)aText type:(EArtProgressHUDType)aType inView:(NSView *)aView
 {
     if (!_hudProgress) {
         _hudProgress = [[self alloc] init];
+    }
+    
+    if (aView) {
+        _hudProgress.popView = aView;
     }
     
     [ArtProgressHUD configImageNameWithType:aType];
@@ -72,8 +80,9 @@ static ArtProgressHUD *_hudProgress;
         [_hudProgress.window.parentWindow removeChildWindow:_hudProgress.window];
     }
     
-    [aWindow addChildWindow:_hudProgress.window ordered:NSWindowAbove];
-    [_hudProgress showWindow:aWindow];
+    AppDelegate *delegate = [NSApplication sharedApplication].delegate;
+    [delegate.mainWC.window addChildWindow:_hudProgress.window ordered:NSWindowAbove];
+    [_hudProgress showWindow:delegate.mainWC.window];
 }
 
 + (void)showLoading:(NSWindow *)aWindow;
@@ -163,7 +172,11 @@ static ArtProgressHUD *_hudProgress;
     if (!self.window.parentWindow) {
         return;
     }
+
     NSRect parentRect = self.window.parentWindow.frame;
+    if (self.popView) {
+        parentRect = NSMakeRect(parentRect.origin.x+self.popView.frame.origin.x, parentRect.origin.y+self.popView.frame.origin.y, self.popView.frame.size.width, self.popView.frame.size.height);
+    }
     [self.window setFrameOrigin:NSMakePoint(NSMidX(parentRect) - NSWidth(self.window.frame) / 2, NSMidY(parentRect) - NSHeight(self.window.frame) / 2)];
 }
 

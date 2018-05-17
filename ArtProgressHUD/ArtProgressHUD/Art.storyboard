@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="X6Q-cW-rZ5">
+            <objects>
+                <viewController identifier="ViewController" storyboardIdentifier="ViewController" id="QTU-dZ-sV0" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="U0n-0I-HaC">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="650"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="t5p-J2-90J">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="650"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cR1-hW-6l0">
+                                        <rect key="frame" x="45" y="573" width="97" height="32"/>
+                                        <buttonCell key="cell" type="push" title="showText" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EBL-DP-Acf">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="showTextTest:" target="QTU-dZ-sV0" id="muh-rU-4hn"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="meN-3t-Fol">
+                                        <rect key="frame" x="46" y="527" width="95" height="32"/>
+                                        <buttonCell key="cell" type="push" title="showInfo" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EVd-tf-feg">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="showInfo:" target="QTU-dZ-sV0" id="h28-aT-1ob"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NvU-Ih-sgJ">
+                                        <rect key="frame" x="32" y="485" width="123" height="32"/>
+                                        <buttonCell key="cell" type="push" title="showSuccess" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TtE-eg-zZh">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="showSuccess:" target="QTU-dZ-sV0" id="h3l-UC-KsD"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hIz-Mp-cLi">
+                                        <rect key="frame" x="43" y="452" width="102" height="32"/>
+                                        <buttonCell key="cell" type="push" title="showError" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mDX-Dg-23c">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="showError:" target="QTU-dZ-sV0" id="BeE-jD-WVi"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Ea-4M-FY5">
+                                        <rect key="frame" x="39" y="419" width="117" height="32"/>
+                                        <buttonCell key="cell" type="push" title="showloading" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fHf-01-rLZ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="showHUDLoading:" target="QTU-dZ-sV0" id="5Il-1v-x7B"/>
+                                        </connections>
+                                    </button>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="zNl-0T-xKI">
+                                        <rect key="frame" x="20" y="200" width="163" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="163" id="Vhd-Bu-beF"/>
+                                            <constraint firstAttribute="height" constant="96" id="gvi-8G-rZW"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Z2v-uG-8Ze">
+                                        <rect key="frame" x="261" y="200" width="163" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="j3l-L0-FFd"/>
+                                            <constraint firstAttribute="width" constant="163" id="nw1-4A-Oek"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="meN-3t-Fol" firstAttribute="top" secondItem="cR1-hW-6l0" secondAttribute="bottom" constant="25" id="2IP-ut-Qlh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z2v-uG-8Ze" secondAttribute="trailing" constant="76" id="AAa-jJ-2jG"/>
+                                    <constraint firstItem="NvU-Ih-sgJ" firstAttribute="top" secondItem="meN-3t-Fol" secondAttribute="bottom" constant="21" id="LBY-0H-iHg"/>
+                                    <constraint firstItem="2Ea-4M-FY5" firstAttribute="leading" secondItem="t5p-J2-90J" secondAttribute="leading" constant="45" id="LGK-58-Kef"/>
+                                    <constraint firstItem="zNl-0T-xKI" firstAttribute="leading" secondItem="t5p-J2-90J" secondAttribute="leading" constant="20" id="LW8-a8-bFw"/>
+                                    <constraint firstItem="hIz-Mp-cLi" firstAttribute="centerX" secondItem="NvU-Ih-sgJ" secondAttribute="centerX" id="Phq-5d-tNJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="zNl-0T-xKI" secondAttribute="bottom" constant="200" id="Ykh-RS-wJ7"/>
+                                    <constraint firstItem="hIz-Mp-cLi" firstAttribute="top" secondItem="NvU-Ih-sgJ" secondAttribute="bottom" constant="12" symbolic="YES" id="eSN-lD-Nwj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z2v-uG-8Ze" secondAttribute="bottom" constant="200" id="en3-Kt-m4K"/>
+                                    <constraint firstItem="NvU-Ih-sgJ" firstAttribute="centerX" secondItem="meN-3t-Fol" secondAttribute="centerX" id="hol-Yg-Pfi"/>
+                                    <constraint firstItem="2Ea-4M-FY5" firstAttribute="top" secondItem="hIz-Mp-cLi" secondAttribute="bottom" constant="12" symbolic="YES" id="jHx-5H-PEI"/>
+                                    <constraint firstItem="cR1-hW-6l0" firstAttribute="leading" secondItem="t5p-J2-90J" secondAttribute="leading" constant="51" id="mwc-oS-UfW"/>
+                                    <constraint firstItem="meN-3t-Fol" firstAttribute="centerX" secondItem="cR1-hW-6l0" secondAttribute="centerX" id="ntN-1A-A6D"/>
+                                    <constraint firstItem="cR1-hW-6l0" firstAttribute="top" secondItem="t5p-J2-90J" secondAttribute="top" constant="49" id="uv1-tP-Trs"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="t5p-J2-90J" firstAttribute="leading" secondItem="U0n-0I-HaC" secondAttribute="leading" id="0CE-V4-1vU"/>
+                            <constraint firstAttribute="bottom" secondItem="t5p-J2-90J" secondAttribute="bottom" id="7Nn-yi-IIP"/>
+                            <constraint firstAttribute="trailing" secondItem="t5p-J2-90J" secondAttribute="trailing" id="LKf-0G-tw8"/>
+                            <constraint firstItem="t5p-J2-90J" firstAttribute="top" secondItem="U0n-0I-HaC" secondAttribute="top" id="Zuv-au-e2v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftView" destination="zNl-0T-xKI" id="Jcf-Dd-O6r"/>
+                        <outlet property="rightView" destination="Z2v-uG-8Ze" id="kH6-gw-wfE"/>
+                    </connections>
+                </viewController>
+                <customObject id="SmZ-mw-Mao" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35" y="728"/>
+        </scene>
+    </scenes>
+</document>

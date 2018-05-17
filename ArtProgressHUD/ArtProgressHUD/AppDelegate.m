@@ -7,15 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "ArtWindowController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) ArtWindowController *artWindow;
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    self.artWindow = [[ArtWindowController alloc] init];
+    [self.artWindow showWindow:self];
+    self.mainWC = self.artWindow;
 }
 
 

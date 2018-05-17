@@ -10,7 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (nonatomic, weak) NSWindowController *mainWC;
+@property (nonatomic, strong) NSWindowController *mainWC;
 
 @end
 

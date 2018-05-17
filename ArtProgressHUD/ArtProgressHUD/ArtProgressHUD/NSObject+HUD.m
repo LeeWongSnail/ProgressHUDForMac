@@ -8,38 +8,44 @@
 
 #import "NSObject+HUD.h"
 #import "ArtProgressHUD.h"
+#import "AppDelegate.h"
 
 @implementation NSObject (HUD)
 
-- (void)art_showText:(NSString *)aText inWindow:(NSWindow *)aWindow
+- (void)art_showText:(NSString *)aText
 {
-    [ArtProgressHUD showText:aText inWindow:aWindow];
+    [ArtProgressHUD showText:aText];
 }
 
-- (void)art_showInfoText:(NSString *)aText inWindow:(NSWindow *)aWindow
+- (void)art_showInfoText:(NSString *)aText
 {
-    [ArtProgressHUD showInfoText:aText inWindow:aWindow];
+    [ArtProgressHUD showInfoText:aText];
 }
 
-- (void)art_showErrorText:(NSString *)aText inWindow:(NSWindow *)aWindow
+- (void)art_showErrorText:(NSString *)aText
 {
-    [ArtProgressHUD showErrorText:aText inWindow:aWindow];
+    [ArtProgressHUD showErrorText:aText];
 }
 
 
-- (void)art_showSuccessText:(NSString *)aText inWindow:(NSWindow *)aWindow
+- (void)art_showSuccessText:(NSString *)aText
 {
-    [ArtProgressHUD showSuccessText:aText inWindow:aWindow];
+    [ArtProgressHUD showSuccessText:aText];
 }
 
-- (void)art_showLoading:(NSWindow *)aWindow
+- (void)art_showLoading:(NSView *)aView
 {
-    [ArtProgressHUD showLoading:aWindow];
+    [ArtProgressHUD showLoading:aView];
 
 }
 
 - (void)art_dismissLoading
 {
     [ArtProgressHUD dismissLoading];
+}
+
+- (void)art_showText:(NSString *)aText type:(EArtProgressHUDType)aType inView:(NSView *)aView
+{
+    [ArtProgressHUD showText:aText type:aType inView:aView];
 }
 @end

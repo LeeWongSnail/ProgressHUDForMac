@@ -22,6 +22,8 @@
 		EBE503712087257700843D3B /* MLHudAlertSuccess.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE5036D2087257700843D3B /* MLHudAlertSuccess.png */; };
 		EBE503722087257700843D3B /* MLHudAlertWarn.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE5036E2087257700843D3B /* MLHudAlertWarn.png */; };
 		EBE5037520874B3500843D3B /* NSObject+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE5037420874B3500843D3B /* NSObject+HUD.m */; };
+		EBF9C77C20AD6F9100503178 /* ArtWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF9C77B20AD6F9100503178 /* ArtWindowController.m */; };
+		EBF9C77E20AD724F00503178 /* Art.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF9C77D20AD724F00503178 /* Art.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 		EBE5036E2087257700843D3B /* MLHudAlertWarn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLHudAlertWarn.png; sourceTree = "<group>"; };
 		EBE5037320874B3500843D3B /* NSObject+HUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HUD.h"; sourceTree = "<group>"; };
 		EBE5037420874B3500843D3B /* NSObject+HUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HUD.m"; sourceTree = "<group>"; };
+		EBF9C77A20AD6F9100503178 /* ArtWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtWindowController.h; sourceTree = "<group>"; };
+		EBF9C77B20AD6F9100503178 /* ArtWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtWindowController.m; sourceTree = "<group>"; };
+		EBF9C77D20AD724F00503178 /* Art.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Art.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,9 @@
 				EBE5019F2080A98300843D3B /* Info.plist */,
 				EBE501A02080A98300843D3B /* main.m */,
 				EBE501A22080A98300843D3B /* ArtProgressHUD.entitlements */,
+				EBF9C77A20AD6F9100503178 /* ArtWindowController.h */,
+				EBF9C77B20AD6F9100503178 /* ArtWindowController.m */,
+				EBF9C77D20AD724F00503178 /* Art.storyboard */,
 			);
 			path = ArtProgressHUD;
 			sourceTree = "<group>";
@@ -284,6 +292,7 @@
 				EBE503712087257700843D3B /* MLHudAlertSuccess.png in Resources */,
 				EBE5019B2080A98300843D3B /* Assets.xcassets in Resources */,
 				EBE5019E2080A98300843D3B /* Main.storyboard in Resources */,
+				EBF9C77E20AD724F00503178 /* Art.storyboard in Resources */,
 				EBE503702087257700843D3B /* MLHudAlertError.png in Resources */,
 				EBE5036F2087257700843D3B /* MLHudAlertInfo.png in Resources */,
 				EBE503722087257700843D3B /* MLHudAlertWarn.png in Resources */,
@@ -315,6 +324,7 @@
 				EBE501D62080AFC600843D3B /* ArtProgressHUD.m in Sources */,
 				EBE501992080A98200843D3B /* ViewController.m in Sources */,
 				EBE5037520874B3500843D3B /* NSObject+HUD.m in Sources */,
+				EBF9C77C20AD6F9100503178 /* ArtWindowController.m in Sources */,
 				EBE501A12080A98300843D3B /* main.m in Sources */,
 				EBE501962080A98200843D3B /* AppDelegate.m in Sources */,
 			);

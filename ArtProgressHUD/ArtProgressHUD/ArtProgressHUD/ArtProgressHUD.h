@@ -19,10 +19,12 @@ typedef NS_ENUM(NSUInteger, EArtProgressHUDType){
 
 @interface ArtProgressHUD : NSWindowController
 
-+ (void)showText:(NSString *)aText inWindow:(NSWindow *)aWindow;
-+ (void)showInfoText:(NSString *)aText inWindow:(NSWindow *)aWindow;
-+ (void)showErrorText:(NSString *)aText inWindow:(NSWindow *)aWindow;
-+ (void)showSuccessText:(NSString *)aText inWindow:(NSWindow *)aWindow;
-+ (void)showLoading:(NSWindow *)aWindow;
++ (void)showText:(NSString *)aText;
++ (void)showInfoText:(NSString *)aText;
++ (void)showErrorText:(NSString *)aText;
++ (void)showSuccessText:(NSString *)aText;
++ (void)showText:(NSString *)aText type:(EArtProgressHUDType)aType inView:(NSView *)aView;
+
++ (void)showLoading:(NSView *)aView;
 + (void)dismissLoading;
 @end

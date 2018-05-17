@@ -7,7 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "AppDelegate.h"
 
 int main(int argc, const char * argv[]) {
+    NSApplication*applicaton = [NSApplication sharedApplication];
+    id delegete = [[AppDelegate alloc]init];
+    
+    applicaton.delegate= delegete;
     return NSApplicationMain(argc, argv);
 }
