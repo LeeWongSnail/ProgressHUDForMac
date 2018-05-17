@@ -174,8 +174,14 @@ static ArtProgressHUD *_hudProgress;
     }
 
     NSRect parentRect = self.window.parentWindow.frame;
-    if (self.popView) {
-        parentRect = NSMakeRect(parentRect.origin.x+self.popView.frame.origin.x, parentRect.origin.y+self.popView.frame.origin.y, self.popView.frame.size.width, self.popView.frame.size.height);
+    if (_hudProgress.popView) {
+        parentRect = NSMakeRect(parentRect.origin.x+_hudProgress.popView.frame.origin.x, parentRect.origin.y+_hudProgress.popView.frame.origin.y, _hudProgress.popView.frame.size.width, _hudProgress.popView.frame.size.height);
+        
+        CGFloat width = _hudProgress.popView.frame.size.width>150?150:_hudProgress.popView.frame.size.width;
+        CGFloat height = _hudProgress.popView.frame.size.height > 100?100:_hudProgress.popView.frame.size.height;
+        [self.window setContentSize:NSMakeSize(width, height)];
+    } else {
+        [self.window setContentSize:NSMakeSize(150, 100)];
     }
     [self.window setFrameOrigin:NSMakePoint(NSMidX(parentRect) - NSWidth(self.window.frame) / 2, NSMidY(parentRect) - NSHeight(self.window.frame) / 2)];
 }
